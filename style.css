@@ -1,0 +1,228 @@
+body {
+	background-color: #fcef8d;
+	font-family: 'Varela', sans-serif;
+}
+#logo-container {
+	position: fixed;
+	top: -5px;
+	left: -10px;
+	background: #000000;
+	height: 130px;
+	padding-right: 100px;
+	padding-left: 100px;
+	z-index: 999;
+}
+header img {
+	position: absolute;
+	right: 170px;
+}
+#navbar h3 {
+	text-align: center;
+	font-size: 18px;
+	color: #ffe63d;
+	position: relative;
+	top: 80px;
+	left: -10px;
+	letter-spacing: 5px;
+}
+#navbar {
+	background-color: #000000;
+	height: 100%;
+	position: fixed;
+	min-width: 290px;
+	top: 0px;
+	left: 0px;
+	width: 390px;
+	border-right: none; 
+	border-color: rgba(0, 22, 22, 0.4);
+	overflow-y: auto;
+	overflow-x: hidden;
+	z-index: 999;
+
+}
+#navbar ul {
+	position: absolute;
+	top: 180px;
+	width: 450px;
+	padding: 5%;
+}
+.nav-link {
+	margin-right: 1%;
+	margin-bottom: 3%;
+	color: #ffe63d;
+	text-decoration: none;
+}
+nav ul li {
+	 padding: 5px 0px 15px 30px;
+}
+nav ul li:hover {
+	transform: scale(1.1);
+}
+.main-section {
+	width: 750px;
+	font-size: 15px;
+	color: #000000;
+	position: relative;
+	left: 430px;
+}
+.main-section header {
+	margin-top: 2%;
+	font-size: 28px;
+	font-weight: 900;
+}
+.main-section article {
+	font-size: 15px;
+	line-height: 20px;
+	text-align: justify;
+}
+code {
+  display: block;
+  text-align: left;
+  white-space: pre;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  /*background-color: #f7f7f7;*/
+  background: #000000;
+  color: #fcef8d;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+footer {
+  background: #000000;
+  position: absolute;
+  top: 6100px;
+  right: 0.8px;
+  width: 1700px;
+  height: 100px;
+  display: inline;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+footer ul li {
+  float: right;
+  display: inline;
+  position: relative;
+  left: -50px;
+  padding: 5px 0px 5px 30px;
+  font-weight: 600;
+}
+footer ul li a {
+  color: #ffe63d;
+  text-decoration: none;
+}
+footer span {
+  position: absolute;
+  right: 10px;
+  top: 60px;
+  text-align: center;
+  color: #ffe63d;
+  font-size: 15px;
+}
+footer img {
+	position: relative;
+	bottom: 20px;
+	left: 800px;
+}
+/*---scrollbar styling------------*/
+/* width */
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #000000;
+  box-shadow: inset 0 0 5px #000000; 
+  border-radius: 1px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: gray; 
+  border-radius: 1px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: gray; 
+}
+/*----Media query for phone and small tabs----*/
+@media only screen and (max-width: 580px) {
+  #main-doc {
+    margin: 2%;
+    width: 100%;
+    position: relative;
+    top: 60px;
+    right: 210px;
+  }
+  .main-section {
+	width: 80%;
+	font-size: 85%;
+	position: relative;
+	left: 430px;
+  }
+  .main-section header {
+	font-size: 190%;
+  }
+  .main-section article {
+	font-size: 100%;
+  } 
+
+  code {
+    margin-left: -20px;
+    width: 100%;
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 45px;
+    min-width: 233px;
+    overflow-x: auto;
+    overflow-y: auto;
+  }
+  #navbar {
+  	width: 100%;
+  	height: 100px;
+  	overflow-y: hidden;
+  	overflow-x: hidden;
+  }
+  #logo-container {
+  	width: 40%;
+  	height: auto;
+  	position: relative;
+  	bottom: -10px;
+  	left: 35px;
+  }
+  header img {
+  	width: 35%;
+  	height: auto;
+  	position: relative;
+  	right: 30px;
+  	top: 10px;
+
+  }
+  #navbar h3 {
+	font-size: 100%;
+	position: relative;
+	top: -35px;
+	left: 40px;
+  }
+  footer {
+    position: absolute;
+    top: 7400px;
+    right: -208px;
+    width: 130%;
+    height: 100px;
+    display: inline;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  footer span {
+    font-size: 85%;
+  }
+  footer img {
+	display: none;
+  }
+
+}
